@@ -27,7 +27,8 @@ Here $G$ is the grid size, $\mathcal{B}_k$ are B-spline basis funcitons, and $c_
 
 This implementation uses the $\texttt{pykan}$ library by Liu et al. (2024) for KAN layers. The KAN formulation follows the original work "KAN: Kolmogorov–Arnold Networks" by Ziming Liu et al.
 
+
 ## Quick Start
 ```bash
 pip install -r requirements.txt
-python train.py
+python train.py --kan_width_factors "0.03125,0.0625,0.125" --save_dir "width" 
