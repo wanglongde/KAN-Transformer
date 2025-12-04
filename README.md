@@ -9,9 +9,9 @@ This repository contains code to train and evaluate Transformer language models 
 
 The standard Transformer FFN layer
 
-\[
+$$
 \text{FFN}_{\text{MLP}}(\mathbf{x}) = \mathbf{W}_2(\sigma(\mathbf{W}_1\mathbf{x} + \mathbf{b}_1)) + \mathbf{b}_2
-\]
+$$
 
 is replaced with a KAN-based layer:
 
