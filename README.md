@@ -21,7 +21,11 @@ $$
 \phi_{j,i}(x_i) = w^{\text{base}}_{j,i}\cdot\text{SiLU}(x_i) + \sum_{k=0}^{G-1} c_{j,i,k}\cdot\mathcal{B}_k(x_i).
 $$
 
-Here $G$ is the grid size, $\mathcal{B}_k$ are B-spline basis functions, and $c_{j,i,k}$ are learnable spline coefficients.
+Here `$G$` is the grid size, `$\mathcal{B}_k$` are B-spline basis functions, and `$c_{j,i,k}$` are learnable spline coefficients.
+
+## Acknowledgments
+
+This implementation uses the pykan library by Liu et al. (2024) for KAN layers. The KAN formulation follows the original work: "KAN: Kolmogorov–Arnold Networks" by Ziming Liu et al.
 
 ## Quick Start
 ```bash
